@@ -1,0 +1,60 @@
+ .owl-prev span, .owl-next span {
+	 
+	 font-size: 75px;
+ }
+ 
+ 
+#doctor-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.owl-nav {
+     position: absolute;
+    left: 20px;
+    top: 50%;  
+    display: block;
+    padding: 0 .3em !important;
+    font-size: 3em;
+    margin: 0;
+    cursor: pointer; 
+    transform: translate(-50%, -50%);
+    
+}
+
+#doctor-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.owl-nav {
+    position: absolute;
+    right: -23px;
+    top: 50%;  
+    display: block ;
+    padding: 0 .3em !important;
+    font-size: 3em ;
+    margin: 0;
+    cursor: pointer; 
+    transform: translate(-50%, -50%);
+}
+
+ 
+    /*  
+    height: 255px; */
+/* #doctor-carousel .doctor-card img {
+    border-radius: 50%;
+    object-fit: contain;
+}
+ */
+#doctor-carousel .card-header {
+	display: flex;
+}
+
+#doctor-carousel .doctor-img {
+	width: 20%;
+}
+#doctor-carousel .doctor-info {
+	width: 80%;
+}
+ #doctor-carousel .doctor-img  img {
+	
+	width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid #eee;
+	
+}

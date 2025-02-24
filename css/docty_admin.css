@@ -1,0 +1,25 @@
+.docty_wrap{
+	
+	width: 50%;
+    border-radius: 14px; 
+    box-shadow: 5px 10px #ebe5e5;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 4%;
+}
+
+.docty_wrap .form-table td{
+	    width: 100%;
+		    padding: 10px 10px;
+
+}
+.wrap_opt_v{
+	display:none;
+}
+
+/* .table_staff 
+.table_staff th,
+.table_staff td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} */

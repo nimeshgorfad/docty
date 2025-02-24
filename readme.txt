@@ -17,13 +17,4 @@ Displays clinic information such as staff, locations, specialties, and reviews.
   
 ## Support
 For any questions or issues, please contact nimeshgorfad@gmail.com,https://www.freelancer.in/u/nimeshgorfad
-
-
-<p>
-<a href="mailto:nimeshgorfad@gmail.com">
-<img src = "https://nimesh.nzonetech.com/wp-content/uploads/2025/02/gmail_contact.png" alt=""></a>
-</p>
-<a href="https://join.skype.com/invite/ufAxw3GTeaq1" rel="nofollow"><img src="https://nimesh.nzonetech.com/wp-content/uploads/2025/02/skype_support.png" alt=""></a><br></p>
-
-
-<p><a href="https://codecanyon.net/user/nimeshgorfad/follow"><img src = "https://nimesh.nzonetech.com/wp-content/uploads/2025/02/evento_follow.png" alt=""></a><br></p>
+ 

@@ -31,11 +31,9 @@ function docty_doctors_list_shortcode($atts){
 			$doctor_id = $doctor['id'];
 			//$content .= $doctor['fullName'];
 			//$content .= $doctor['picture'];
-			
-			
+            $doc_page = get_permalink( get_page_by_path('staff-'.$doctor_id) ) ;
 
-
-			
+					
 			 $content .= '<div class="doctor-card ng-star-inserted">';
 			 
 				 $content .= '<div class="card-header">';
@@ -49,7 +47,7 @@ function docty_doctors_list_shortcode($atts){
 				 $content .= '</div>'; 
 				 
 				 $content .= '<div class="card-footer">';
-				 $content .= '<a href="'.$booking_page.'?dr='.$doctor_id.'" > <button class="book-button" >Book Appointment</button> </a>';
+				 $content .= '<a href="'.$doc_page.'" > <button class="book-button" >Book Appointment</button> </a>';
 				 $content .= '</div>';
 				 
 			 $content .= '</div>';

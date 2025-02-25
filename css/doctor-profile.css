@@ -1,0 +1,317 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f8ff;
+    
+}
+.container {
+    
+    width: 100%;
+    max-width: 90%;
+   
+    
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.doctor-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.doctor-header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.doctor-info {
+    text-align: left;
+}
+.doctor-info h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.rating {
+    color: #ff9800;
+    font-weight: bold;
+}
+.review-card {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: left;
+}
+.review-card strong {
+    font-size: 20px;
+    color: #222;
+}
+.stars {
+    color: #ffd700;
+    font-size: 18px;
+}
+.reasons {
+    margin-top: 15px;
+    text-align: left;
+}
+.reasons ul {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+}
+.reasons ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.checkmark {
+    color: #009688;
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+    .reasons ul {
+        columns: 1;
+    }
+    .doctor-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+
+.consultation-medium {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.medium-option {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.medium-option:hover, .medium-option.active {
+    border-color: #009688;
+    background: #e0f7fa;
+}
+.hospital-list {
+    margin-bottom: 15px;
+}
+.hospital {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.hospital img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.consultation-time {
+    text-align: center;
+}
+.time-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+.time-slot {
+    padding: 10px;
+    border: 1px solid #009688;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.time-slot:hover, .time-slot.selected {
+    background: #009688;
+    color: white;
+}
+@media (max-width: 480px) {
+    .consultation-medium {
+        flex-direction: column;
+    }
+}
+
+
+
+.experience-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+.experience-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+.experience-info {
+    flex-grow: 1;
+}
+.experience-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.experience-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+@media (max-width: 600px) {
+    .experience-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+.clinic-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+.clinic-info {
+    flex-grow: 1;
+}
+.clinic-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.clinic-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+.clinic-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+.schedule {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.day {
+    padding: 10px;
+    border: 1px solid #009688;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    background: #e0f7fa;
+}
+
+
+iframe {
+    border-radius: 8px;
+    width: 200px;
+    height: 150px;
+}
+
+
+.booking_iframe {   
+     width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .clinic-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.review-card {
+    
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px; 
+}
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.review-info {
+    flex-grow: 1;
+}
+.review-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.review-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+.stars {
+    color: #ff9800;
+    font-size: 14px;
+}
+.recommend {
+    color: #008000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.reply {
+    color: #007bff;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .review-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .review-avatar {
+        margin-bottom: 10px;
+    }
+}
+
+
+.two-col {
+    display: flex;
+    gap: 20px;
+}
+.left-col {
+    flex: 60%;
+}
+.right-col {
+    flex: 40%;
+}
+
+@media (max-width: 768px) {
+    .two-col {
+        flex-direction: column;
+    }
+}

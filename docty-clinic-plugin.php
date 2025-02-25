@@ -17,6 +17,7 @@ define('DOCTY_CLINIC_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('DOCTY_CLINIC_PLUGIN_DIR', plugin_dir_url(__FILE__));
 define('DOCTY_API_URL', 'https://dev-backend.docty.life/');
 define('DOCTY_IFRAME_URL', 'https://patientv2.docty.life/wp/profile/');
+define('DOCTY_IFRAME_CHECKUT_URL', 'https://patientv2.docty.life/wp/checkout/');
 define('DOCTY_CLINIC_VERSION', '1.0.2');
 
 // Include necessary files
@@ -36,6 +37,8 @@ function enqueue_docty_scripts_and_styles() {
 
     wp_enqueue_style('owl.carousel', plugin_dir_url(__FILE__) . 'css/owl.carousel.min.css', false, DOCTY_CLINIC_VERSION );
     wp_enqueue_style('docty_css', plugin_dir_url(__FILE__) . 'css/front.css', false, DOCTY_CLINIC_VERSION );
+    // docter profile template css
+    wp_enqueue_style('docty_doctor_profile_css', plugin_dir_url(__FILE__) . 'css/doctor-profile.css', false, DOCTY_CLINIC_VERSION );
      
     wp_enqueue_script( 'owl.carousel', plugins_url( 'js/owl.carousel.js', __FILE__ ), array('jquery'),DOCTY_CLINIC_VERSION );
     wp_enqueue_script( 'docty_js', plugins_url( 'js/front.js', __FILE__ ), array('jquery','owl.carousel'), DOCTY_CLINIC_VERSION );
@@ -52,4 +55,20 @@ function admin_enqueue_docty_scripts_and_styles(){
     
 }
    
-add_action('admin_enqueue_scripts', 'admin_enqueue_docty_scripts_and_styles');
+add_action('admin_enqueue_scripts', 'admin_enqueue_docty_scripts_and_styles');
+
+/**
+ * Add docter profile template
+ */
+
+ add_filter('theme_page_templates', function ($templates) {
+    $templates['doctor-profile-page-template.php'] = 'Doctor Profile Page Template';
+    return $templates;
+});
+
+add_filter('template_include', function ($template) {
+    if (is_page_template('doctor-profile-page-template.php')) {
+        return DOCTY_CLINIC_PLUGIN_PATH. 'template/doctor-profile-page-template.php';
+    }
+    return $template;
+});

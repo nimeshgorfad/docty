@@ -67,6 +67,7 @@ function docty_staff_page_callback(){
 		$page_title = 'staff-'.$dr_id;
 		$page_slug = 'staff-'.$dr_id;
 		$template_name = 'doctor-profile-template.php'; // Adjust the path as needed
+		$template_name = 'doctor-profile-page-template.php'; // Adjust the path as needed
 
 		// Check if the page already exists
 		$existing_page = get_page_by_path($page_slug);
